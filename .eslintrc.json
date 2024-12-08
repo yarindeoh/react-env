@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "react-hooks", "prettier"],
+  "rules": {
+    "prettier/prettier": "error", // Show Prettier errors as ESLint errors
+    "react/react-in-jsx-scope": "off", // Not needed for modern React
+    "import/prefer-default-export": "off", // Disable forcing default exports
+    "react/prop-types": "off" // Disable prop-types if using TypeScript
+  }
+}
